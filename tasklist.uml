@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.SCHEMA:postgres.tasklist</OriginalElement>
+  <nodes>
+    <node x="791.75" y="22.0">fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.role_data</node>
+    <node x="143.0" y="183.0">fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.activity</node>
+    <node x="406.0" y="0.0">fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.user_data</node>
+    <node x="330.57142857142856" y="368.0">fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.task</node>
+    <node x="0.0" y="183.0">fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.priority</node>
+    <node x="754.0" y="205.0">fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.user_role</node>
+    <node x="310.0" y="172.0">fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.category</node>
+    <node x="536.0" y="183.0">fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.stat</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.user_role" target="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.role_data" relationship="REFERENCES">
+      <point x="30.75" y="-39.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.category" target="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.user_data" relationship="REFERENCES">
+      <point x="0.0" y="-72.0" />
+      <point x="412.5" y="147.0" />
+      <point x="469.0" y="147.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.stat" target="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.user_data" relationship="REFERENCES">
+      <point x="0.0" y="-61.0" />
+      <point x="635.0" y="147.0" />
+      <point x="469.0" y="147.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.task" target="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.user_data" relationship="REFERENCES">
+      <point x="56.0" y="-94.0" />
+      <point x="470.57142857142856" y="342.0" />
+      <point x="525.5" y="342.0" />
+      <point x="525.5" y="147.0" />
+      <point x="469.0" y="147.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.priority" target="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.user_data" relationship="REFERENCES">
+      <point x="0.0" y="-61.0" />
+      <point x="61.5" y="147.0" />
+      <point x="469.0" y="147.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.user_role" target="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.user_data" relationship="REFERENCES">
+      <point x="-30.75" y="-39.0" />
+      <point x="784.75" y="147.0" />
+      <point x="469.0" y="147.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.task" target="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.priority" relationship="REFERENCES">
+      <point x="-56.0" y="-94.0" />
+      <point x="358.57142857142856" y="342.0" />
+      <point x="61.5" y="342.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.activity" target="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.user_data" relationship="REFERENCES">
+      <point x="0.0" y="-61.0" />
+      <point x="216.5" y="147.0" />
+      <point x="469.0" y="147.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.task" target="fb7e323d-f818-4899-b0e6-ab2fafc6c5b8.TABLE:postgres.tasklist.category" relationship="REFERENCES">
+      <point x="0.0" y="-94.0" />
+      <point x="414.57142857142856" y="342.0" />
+      <point x="412.5" y="342.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="450.5" y="278.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
